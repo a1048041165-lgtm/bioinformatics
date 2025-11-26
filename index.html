@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bioinformatics Portfolio | Dr. Aurora Chen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="brand">Aurora Chen | Bioinformatics</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#projects">Projects</a>
+      <a href="#publications">Publications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Hero">
+      <div class="hero__content">
+        <p class="eyebrow">Computational Biology • Genomics • AI</p>
+        <h1>Translating complex omics into actionable insights.</h1>
+        <p class="lede">
+          I'm Aurora Chen, a bioinformatics scientist building reproducible pipelines and machine
+          learning models to accelerate precision medicine. I craft analyses, dashboards, and
+          interoperable APIs that help collaborators move from raw data to validated discoveries.
+        </p>
+        <div class="hero__actions">
+          <a class="button primary" href="#projects">View work</a>
+          <a class="button" href="#contact">Collaborate</a>
+        </div>
+        <dl class="metrics" aria-label="Impact metrics">
+          <div>
+            <dt>15+</dt>
+            <dd>multi-omics projects</dd>
+          </div>
+          <div>
+            <dt>120M</dt>
+            <dd>reads processed / month</dd>
+          </div>
+          <div>
+            <dt>9</dt>
+            <dd>peer-reviewed publications</dd>
+          </div>
+        </dl>
+      </div>
+      <div class="hero__card" role="presentation">
+        <div class="glow"></div>
+        <div class="card">
+          <h2>Current focus</h2>
+          <ul>
+            <li>Single-cell transcriptomics QC & integration</li>
+            <li>Variant interpretation workflows in Nextflow</li>
+            <li>LLM-assisted curation of gene-disease evidence</li>
+          </ul>
+          <div class="stack">
+            <span>Python</span>
+            <span>R/Bioconductor</span>
+            <span>Nextflow</span>
+            <span>Docker</span>
+            <span>Airflow</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="panel">
+      <div class="section-header">
+        <p class="eyebrow">About</p>
+        <h2>Scientist, engineer, and collaborator.</h2>
+      </div>
+      <div class="grid two-columns">
+        <p>
+          I bridge wet-lab collaborators and production engineering teams, translating scientific
+          questions into scalable analyses. My background spans transcriptomics, variant calling,
+          proteomics, and applied machine learning. I prioritize data provenance, automation, and
+          clear communication.
+        </p>
+        <ul class="list">
+          <li>PhD, Computational Biology — UCSF</li>
+          <li>Former Lead Bioinformatics Scientist @ GenomicFoundry</li>
+          <li>Open-source contributor: nf-core, Bioconda</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="research" class="panel muted">
+      <div class="section-header">
+        <p class="eyebrow">Research Themes</p>
+        <h2>From raw signals to clinically relevant hypotheses.</h2>
+      </div>
+      <div class="grid three-columns">
+        <article class="card">
+          <h3>Single-cell analytics</h3>
+          <p>Integration, batch correction, and spatial transcriptomics pipelines with rigorous QC.</p>
+          <p class="tag">Seurat · Scanpy · scVI</p>
+        </article>
+        <article class="card">
+          <h3>Variant intelligence</h3>
+          <p>End-to-end germline & somatic workflows paired with clinical-grade annotation.</p>
+          <p class="tag">GATK · Nextflow · Ensembl VEP</p>
+        </article>
+        <article class="card">
+          <h3>AI for discovery</h3>
+          <p>LLM-backed triage of literature, knowledge graphs, and generative hypothesis testing.</p>
+          <p class="tag">Graph ML · Retrieval · LLM Ops</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="panel">
+      <div class="section-header">
+        <p class="eyebrow">Highlighted Projects</p>
+        <h2>Production-grade analyses tailored for teams.</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline__item">
+          <div class="bullet"></div>
+          <div>
+            <h3>Nextflow-based rare disease pipeline</h3>
+            <p>Automated FASTQ→VCF workflow with joint calling, multi-sample QC, and turnkey reports.</p>
+            <p class="tag">Nextflow · GATK · MultiQC · AWS Batch</p>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <div class="bullet"></div>
+          <div>
+            <h3>Single-cell atlas dashboard</h3>
+            <p>Interactive Shiny/Plotly app delivering marker discovery, pseudotime, and enrichment views.</p>
+            <p class="tag">R Shiny · Scanpy · Plotly</p>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <div class="bullet"></div>
+          <div>
+            <h3>Reproducible proteomics pipeline</h3>
+            <p>Containerized MaxQuant-to-Pathway workflow with automatic provenance capture.</p>
+            <p class="tag">Docker · Snakemake · MSstats</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications" class="panel muted">
+      <div class="section-header">
+        <p class="eyebrow">Selected Publications</p>
+        <h2>Transparent methods and open data.</h2>
+      </div>
+      <ul class="pub-list">
+        <li>
+          <span>Chen A*</span>, Lee R. "Integrative single-cell atlas of metastatic melanoma." Cell Systems, 2023.
+        </li>
+        <li>
+          <span>Chen A*</span>, Patel S. "Rapid variant prioritization using graph-based annotation." Bioinformatics, 2022.
+        </li>
+        <li>
+          <span>Chen A*</span>, Ng M. "Proteome-wide discovery of synthetic lethal pairs." Nature Communications, 2021.
+        </li>
+      </ul>
+    </section>
+
+    <section id="contact" class="panel contact">
+      <div class="section-header">
+        <p class="eyebrow">Contact</p>
+        <h2>Let's design the next experiment together.</h2>
+      </div>
+      <div class="grid two-columns">
+        <div>
+          <p>Open to collaborations on translational genomics, assay design, and pipeline hardening.</p>
+          <div class="contact-links">
+            <a href="mailto:aurora.chen.bio@gmail.com">aurora.chen.bio@gmail.com</a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </div>
+        <form class="contact-form" aria-label="Contact form (non-functional demo)">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" />
+          </label>
+          <label>
+            Project focus
+            <select name="topic">
+              <option>Single-cell</option>
+              <option>Variant analysis</option>
+              <option>Proteomics</option>
+              <option>ML for discovery</option>
+              <option>Other</option>
+            </select>
+          </label>
+          <label>
+            Brief description
+            <textarea rows="3" placeholder="What problem can we solve together?"></textarea>
+          </label>
+          <button class="button primary" type="button">Send a note</button>
+          <p class="form-hint">This demo form is static—connect it to your email or CRM when deploying.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Built with reproducibility in mind · Versioned on GitHub · Deployed via GitHub Pages</p>
+  </footer>
+</body>
+</html>
